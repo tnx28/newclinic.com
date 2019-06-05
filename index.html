@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New Clinic</title>
+
+  <!-- Required meta tags -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--Bootstrap css-->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <!--jQuery-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  <!--FontAwesomeIcons-->
+  <link rel="stylesheet" type="text/css"href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!--animation-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+
+ <!--Google Fonts-->
+ <link href='https://fonts.googleapis.com/css?family=Asul' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Marko One' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Fugaz One' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Bai Jamjuree' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Shojumaru' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Athiti' rel='stylesheet'>
+
+<style>
+  body{
+    position: absolute; 
+    height: 100%;
+    width: 100%;
+  }
+  .header{
+    background-color: #00008b;
+    color: #fff !important;
+  }
+  .akola{
+    font-size: 18px;
+    word-spacing: 20px;
+    text-align: center;
+    font-family: Athiti;
+    color: #fff;
+  }
+  .fa-envelope-o,.fa-phone,.fa-map-marker{
+    color: orange;
+    font-size: 18px;
+    padding-right: 10px;
+    padding-left: 10px;
+  
+  }
+.makebtn{
+  color: #fff;
+  border:1px solid #fff;
+  background-color: orange;
+  padding: 5px 10px;
+  font-size: 18px;
+  font-family:Athiti;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.makebtn:hover{
+  background-color: purple;
+  color: #fff;
+}
+.nav{
+  padding-left: 45%;
+  height: 100%;
+}
+.navbar{
+  background-color: #000;
+  border:none;
+  height: 100%;
+
+}
+.navbar-toggle{
+  margin-right: 20px;
+}
+.fa-user-md{
+  color: orange;
+  padding-right: 10px;
+}
+.navbar-brand{
+   font-size: 30px;
+   font-family:Allerta;
+}
+.navcontent{
+  font-family: Athiti;
+  font-size: 16px;
+
+}
+.navcontent:hover{
+  background-color: #00BFFF;
+}
+
+
+/*Slider Section*/
+
+
+.slidersec{
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("home3.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff !important;
+  height: 800px;
+  margin-top: -20px;
+  
+}
+.carousel-inner{
+  margin-top: 100px;
+  height: 620px;
+}
+.item{
+  text-align: center;
+}
+.slidehead{
+  font-size: 50px;
+  font-family:Vollkorn SC;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+
+
+}
+.slidesen{
+  font-size: 32px;
+  font-family: Athiti;
+  word-spacing: 3px;
+  letter-spacing: 2px;
+  opacity: .8;
+  padding-top: 20px;
+}
+.slidepara{
+  font-size: 24px;
+  font-family: Athiti;
+  word-spacing: 2px;
+  opacity: .9;
+  padding-top: 20px;
+}
+.slidebtn{
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border:1px solid #fff;
+  margin-top: 40px;
+  font-size: 20px;
+  font-family: Athiti;
+  text-transform: uppercase;
+  background-color: transparent;
+
+}
+.slidebtn:hover{
+  color: #fff;
+  background-color:darkgreen;
+  opacity: .8; 
+}
+.fa-spinner{
+  margin-right: 10px;
+}
+
+.clr{
+  color: orange;
+  margin-left: 5px;
+}
+.welcomesec{
+  padding-bottom: 50px;
+}
+.welcomehead{
+  text-align: center;
+  font-size: 40px;
+  color: #000;
+  font-family: Amaranth;
+  padding-top: 20px;
+  word-spacing: 2px;
+}
+.welcomepara{
+  text-align: center;
+  font-size: 20px;
+  color: #000;
+  word-spacing: 3px;
+  letter-spacing: 2px;
+  font-family: Athiti;
+}
+.line{
+  width: 100px;
+  height: 2px;
+  background-color: #000;
+}
+
+.box1{
+  background-color: purple;
+  height: 400px;
+  width: 335px;
+  margin: 5px;
+  color: #fff;
+  
+}
+.box2{
+  background-color: #8b0000;
+  height: 400px;
+  width: 335px;
+  margin: 5px;
+  color: #fff;
+}
+.box3{
+  background-color: blue;
+  width: 335px;
+  margin: 5px;
+  height: 400px;
+  color: #fff;
+}
+
+.wlchead{
+  padding-top: 30px;
+  font-size: 35px;
+  color: yellow;
+  font-family: Athiti;
+  word-spacing: 2px;
+}
+.wlcpara{
+  padding-top: 15px;
+  font-size: 18px;
+  font-family: Athiti;
+  line-height: 25px;
+  word-spacing: 2px;
+}
+.titles{
+  padding-top: 5px;
+  color: #000;
+  font-family: Baloo;
+  font-size: 20px;
+}
+.timesec{
+    /* The image used */
+  background-image: url("do.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.timecon{
+  color: #fff;
+  background-color: #000;
+  opacity: .8;
+  margin-top: 70px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.gap{
+  margin-left: 100px;
+}
+.gap1{
+  margin-left: 80px;
+}
+.gap2{
+  margin-left: 95px;
+}
+
+.timehead{
+  color: yellow;
+  font-family: Actor;
+  letter-spacing: 1px;
+  font-size: 35px;
+}
+.lead{
+  opacity: .7;
+  margin-bottom: 40px;
+}
+.timepara{
+  font-family: Athiti;
+  font-size: 20px;
+  word-spacing: 2px;
+  color: #fff;
+  line-height: 25px;
+}
+.number{
+  font-size: 40px;
+  font-family: Athiti;
+  letter-spacing: 2px;
+  color: #fff;
+
+}
+.fa-volume-control-phone{
+  color: yellow;
+  font-size: 40px;
+  padding-right: 20px;
+
+}
+.fa-volume-control-phone:hover{
+  color: #ddd;
+}
+.timepara1{
+  font-size: 20px;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  font-family: Athiti;
+}
+.cardsec{
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+.card{
+  
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  height: 250px;
+  width: 325px;
+  margin-left: 25px;
+  margin-right: 7px;
+  margin-bottom: 20px;
+  padding-top: 40px;
+
+}
+.card:hover{
+  background-color: purple;
+  color: #fff;
+}
+.cardhead{
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: baloo;
+  color: orange;
+}
+.cardpara{
+  font-size: 16px;
+  font-family: Athiti;
+}
+
+.fa-heartbeat,.fa-file-text-o,.fa-wheelchair-alt,.fa-medkit,.fa-hospital-o,.fa-ambulance{
+  font-size: 50px;
+  color: #00008b;
+}
+
+.clientsec{
+  /* The image used */
+  background-image: url("doct1.jpeg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+.clientcon{
+  background-color: #000;
+  opacity: .8;
+  margin-top: 20px;
+  padding-top: 50px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 100px;
+  margin-top: 10px;
+
+}
+.clienthead{
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+  font-family: Amaranth;
+  padding-top: 20px;
+  word-spacing: 2px;
+}
+.clientpa{
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  word-spacing: 3px;
+  letter-spacing: 2px;
+  font-family: Athiti;
+}
+.clientpara{
+  font-family: Athiti;
+  font-size: 18px;
+  color: #fff;
+  word-spacing: 2px;
+  text-align: center;
+}
+.me{
+  font-size: 22px;
+  font-family: Athiti;
+  color: yellow;
+  padding-bottom: 40px;
+  margin-left: 90px;
+}
+.casesec{
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+.bx{
+  padding-bottom: 50px;
+  margin-bottom:20px;
+  margin-top: 20px;
+  margin-left: 12px;
+  margin-right: 10px;
+  width: 350px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.4);
+}
+.bxhead{
+  font-size: 22px;
+  color: orange;
+  padding-top: 10px;
+  text-align: center;
+
+}
+.bxpara{
+  font-size: 20px;
+  text-align: center;
+  color: #000;
+  padding-top: 20px;
+  font-family: Athiti;
+}
+.latestsec{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #000;
+  opacity: .8;
+  color: #fff;
+}
+form {
+  font-family: Athiti;
+  font-size: 16px;
+
+}
+
+.news {
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+input[type=text], input[type=submit] {
+  width: 250px;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+.latesthead{
+  padding-top: 20px;
+  color: yellow;
+  font-size: 25px;
+  font-family: Baloo;
+}
+.fa-chevron-right{
+  color: orange;
+  font-size: 15px;
+  padding-right: 5px;
+}
+.latestpara{
+  font-family: Athiti;
+  font-size: 18px;
+  line-height: 25px;
+  opacity: .8;
+  padding-bottom: 20px;
+}
+.latestaro{
+  font-family: Athiti;
+  font-size: 16px;
+  opacity: .8;
+  letter-spacing: 1px;
+}
+.latestcontact{
+  font-size: 18px;
+  opacity: .8;
+  font-family: Athiti;
+}
+.theend{
+background-color: #000;
+  color: #fff !important;
+}
+.teamsec{
+  /* The image used */
+  background-image: url("doct2.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+.cd {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  max-width: 325px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.cardtitle {
+  color: #fff;
+  font-size: 18px;
+}
+
+.teambtn{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.ak{
+  text-decoration: none;
+  font-size: 22px;
+  color: #000;
+  padding:5px;
+  border:1px solid #fff;
+  border-radius: 50%;
+  padding: 10px;
+  margin-left: 5px;
+}
+.ak:hover{
+  background-color: #000;
+  color: #fff;
+}
+.teambtn:hover, .ak:hover {
+  opacity: 0.7;
+}
+.teamsec{
+  padding-top: 50px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.teamtitle,.teamdes{
+  color: #fff;
+}
+.teamname{
+  color: #fff;
+  font-family: Athiti;
+  font-size: 30px;
+}
+
+</style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <header>
+    <div class="header container-fluid">
+      
+        <div class="col-md-6 col-lg-6 text-center">
+          <h3>
+            <span class="akola"><i class="fa fa-map-marker" aria-hidden="true"></i>Akola,India</span>  
+
+            <span class="akola"><i class="fa fa-phone" aria-hidden="true"></i>+91-8459645718
+            </span> 
+            <span class="akola"><i class="fa fa-envelope-o" aria-hidden="true"></i>info@example.com
+          </span>
+        </h3>
+           </div>
+
+        <div class="col-md-6 col-lg-6 text-center">
+          <button class="makebtn">Make An Appointment</button>
+        </div>
+      
+      
+    </div>
+  </header>
+
+<!--navigation menu-->
+
+<section id="navbar">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      
+        </button>
+
+
+      <a class="navbar-brand" href="#slider" style="color: skyblue;"><i class="fa fa-user-md" aria-hidden="true"></i>New Clinic</a>
+    </div>
+       <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="navcontent"><a href="#slider" style="color: #fff;">HOME</a></li>
+            <li class="navcontent"><a href="#welcome" style="color: #fff;">ABOUT</a></li>
+            <li class="navcontent"><a href="#cards" style="color: #fff;">SERVICES</a></li>
+            <li class="navcontent"><a href="#case" style="color: #fff;">GALLERY</a></li>
+            <li class="navcontent"><a href="#" style="color: #fff;">DEPARTMENTS</a></li>
+            <li class="navcontent"><a href="#latest" style="color: #fff;">MAIL US</a></li>    
+          </ul>
+       </div>     
+  </div>
+</nav>
+</section>
+<!--navigation menu end-->
+
+
+<!--Slider Section-->
+
+<section id="slider">
+
+  <div class="slidersec container-fluid">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      
+    </ol>
+
+    <!-- Wrapper for slides -->
+
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        
+          <h1 class="slidehead">WITH A TOUCH OF<span class="clr"> KINDNESS.</span></h1>
+          <h3 class="slidesen">Child Care Treatments</h3>
+          <p class="slidepara">Ut enim ad minim quis nostrud exerci sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua nostrud exerci sed.</p>
+          <button class="slidebtn"><i class="fa fa-spinner fa-spin"></i>Read More</button>
+
+      </div>
+
+      <div class="item">
+        
+          <h1 class="slidehead">WITH A TOUCH OF<span class="clr"> KINDNESS.</span></h1>
+          <h3 class="slidesen">For Adults Treatments</h3>
+          <p class="slidepara">Ut enim ad minim quis nostrud exerci sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua nostrud exerci sed.</p>
+          <button class="slidebtn"><i class="fa fa-spinner fa-spin"></i>Read More</button>
+
+      </div>
+
+      <div class="item">
+        
+          <h1 class="slidehead">WITH A TOUCH OF<span class="clr"> KINDNESS.</span></h1>
+          <h3 class="slidesen">For Business Treatments</h3>
+          <p class="slidepara">Ut enim ad minim quis nostrud exerci sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua nostrud exerci sed.</p>
+          <button class="slidebtn"><i class="fa fa-spinner fa-spin"></i>Read More</button>
+
+      </div>
+
+      
+    </div>
+
+    <!-- Left and right controls -->
+
+     </div>
+
+</div>
+</section>
+
+<!--Welcome Section-->
+<section id="welcome">
+
+  <div class="welcomesec container-fluid">
+    <div class="row">
+      <h2 class="welcomehead">WELCOME TO OUR CLINIC!</h2>
+      <p class="welcomepara">We Offer Extensive Medical Procedures To Outbound And Inbound Patients.</p>
+      <hr class="line">
+      <div class="welcomecon container">
+        
+      <div class="box1 col-md-4 col-lg-4">
+        <h3 class="wlchead">For Adults</h3>
+        <p class="wlcpara">You can call our highly experienced clinical team if your child, teenager or family is going through difficulties.</p>
+        <h4 class="titles">ANXIETY</h4>
+        <h4 class="titles">DEPRESSION</h4>
+        <h4 class="titles">ADHD</h4>
+        <h4 class="titles">BIPOLAR DISORDER</h4>
+        <h4 class="titles">A – Z OF ISSUES</h4>
+      </div>
+
+      <div class="box2 col-md-4 col-lg-4">
+        <h3 class="wlchead">For Children</h3>
+        <p class="wlcpara">You can call our highly experienced clinical team if your child, teenager or family is going through difficulties.</p>
+        <h4 class="titles">ASPERGERS AND AUTISM</h4>
+        <h4 class="titles">DEPRESSION</h4>
+        <h4 class="titles">ANXIETY DISORDERS</h4>
+        <h4 class="titles">BIPOLAR DISORDER</h4>
+        <h4 class="titles">A – Z OF ISSUES</h4>
+      </div>
+
+      <div class="box3 col-md-4 col-lg-4">
+        <h3 class="wlchead">For Business</h3>
+        <p class="wlcpara">You can call our highly experienced clinical team if your child, teenager or family is going through difficulties.</p>
+        <h4 class="titles">MEDICO LEGAL REPORTS</h4>
+        <h4 class="titles">OCCUPATIONAL HEALTH</h4>
+        <h4 class="titles">LOCUMS AND STAFFING</h4>
+        <h4 class="titles">NEUROPSYCHOLOGICAL ASSESSMENTS</h4>
+        <h4 class="titles">MENTAL CAPACITY ASSESSMENTS</h4>
+      </div>
+
+
+      </div>
+      
+    </div>
+    
+  </div>
+  
+</section>
+
+
+<!--Time Section-->
+<section id="time">
+  <div class="timesec container-fluid">
+
+    <div class="timecon container">
+
+      <div class="col-md-6 col-lg-6">
+        <h3 class="timehead">Opening Hours</h3>
+        <hr class="lead">
+        <p class="timepara">Monday - Friday<span class="gap">8.00 am - 9.00 pm</span></p>
+        <p class="timepara">Monday - Saturday<span class="gap1">8.00 am - 9.00 pm</p>
+        <p class="timepara">Monday - Sunday<span class="gap2">8.00 am - 9.00 pm</p>
+      </div>
+
+      <div class="col-md-6 col-lg-6">
+        <h3 class="timehead">Emergency Cases</h3>
+        <hr class="lead">
+        <p class="number"><i class="fa fa-volume-control-phone" aria-hidden="true"></i>1230456789</p>
+        <p class="timepara1">Your treatment plan is designed for steady progress, with every phase promptly implemented.</p>
+        
+      </div>
+
+
+    </div>
+    
+  </div>
+  
+</section>
+
+<!--card section-->
+
+<section id="cards">
+  <div class="cardsec container">
+    <div class="row">
+
+      <h2 class="welcomehead">THERAPIES & TREATMENTS</h2>
+      <p class="welcomepara">We Offer Extensive Medical Procedures To Outbound And Inbound Patients.</p>
+      <hr class="line">
+      
+
+      <div class="card col-lg-4 col-md-4 col-sm-6 col-xs-6">
+        <i class="fa fa-heartbeat" aria-hidden="true"></i>
+        <h3 class="cardhead">ANXIETY</h3>
+        <p class="cardpara">Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+        
+      </div>
+
+
+            <div class="card col-lg-4 col-md-4 col-sm-6 col-xs-6">
+              <i class="fa fa-file-text-o" aria-hidden="true"></i>
+        <h3 class="cardhead">EXECUTIVE COACHING</h3>
+        <p class="cardpara">Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+        
+      </div>
+
+            <div class="card col-lg-4 col-md-4 col-sm-6 col-xs-6">
+              <i class="fa fa-wheelchair-alt" aria-hidden="true"></i>
+        <h3 class="cardhead">DEPRESSION</h3>
+        <p class="cardpara">Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+        
+      </div>
+
+
+            <div class="card col-lg-4 col-md-4 col-sm-6 col-xs-6">
+              <i class="fa fa-medkit" aria-hidden="true"></i>
+        <h3 class="cardhead">RELATIONSHIPS</h3>
+        <p class="cardpara">Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+        
+      </div>
+
+
+      <div class="card col-lg-4 col-md-4 col-sm-6 col-xs-6">
+        <i class="fa fa-hospital-o" aria-hidden="true"></i>
+        <h3 class="cardhead">STRESS MANAGEMENT</h3>
+        <p class="cardpara">Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+        
+      </div>
+
+
+      <div class="card col-lg-4 col-md-4 col-sm-6 col-xs-6">
+        <i class="fa fa-ambulance" aria-hidden="true"></i>
+        <h3 class="cardhead">SUPPORT GROUP</h3>
+        <p class="cardpara">Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+        
+      </div>
+      
+    </div>
+    
+  </div>
+  
+</section>
+
+<!--clients Section-->
+<section id="client">
+  <div class="clientsec container-fluid">
+    <div class="row">
+
+      <h2 class="clienthead">WHAT CLIENTS SAY</h2>
+      <p class="clientpa">We Offer Extensive Medical Procedures To Outbound And Inbound Patients.</p>
+      <hr class="line">
+      
+      <div class="clientcon container">
+        <div class="col-lg-6 col-md-6">
+          <p class="clientpara">Lorem ipsum dolor sit amet. Class aptent taciti.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.</p>
+          <img src="pankaj.jpg" alt="Avatar" class="avatar text-center">
+      <h3 class="me">Pankaj Amale</h3>
+      
+        </div>
+        <div class="col-lg-6 col-md-6">
+          <p class="clientpara">Lorem ipsum dolor sit amet. Class aptent taciti.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.</p>
+          <img src="yogesh.jpg" alt="Avatar" class="avatar text-center">
+      <h3 class="me">Yogesh Khedekar</h3>
+      
+        </div>  
+      
+    </div>
+    
+  </div>
+</div>
+  
+</section>
+
+<!--case study section-->
+<section id="case">
+  <div class="casesec container">
+
+      <h2 class="welcomehead">CASE STUDIES</h2>
+      <p class="welcomepara">We Offer Extensive Medical Procedures To Outbound And Inbound Patients.</p>
+      <hr class="line">
+      
+    <div class="row">
+
+      <div class="bx col-md-4 col-lg-4">
+        <img src="bx1.jpg" height="250" width="325">
+        <h3 class="bxhead">Nutrition Reference</h3>
+        <p class="bxpara">Lorem ipsum dolor sit amet,vehicula vel sapien et, feugiat sapien amet.</p>
+
+        
+      </div>
+
+      <div class="bx col-md-4 col-lg-4">
+        <img src="bx2.jpg" height="250" width="325">
+        <h3 class="bxhead">Injury Prevention</h3>
+        <p class="bxpara">Lorem ipsum dolor sit amet,vehicula vel sapien et, feugiat sapien amet.</p>
+
+        
+      </div>
+      
+      <div class="bx col-md-4 col-lg-4">
+        <img src="bx3.jpg" height="250" width="325">
+        <h3 class="bxhead">Catheterization Lab</h3>
+        <p class="bxpara">Lorem ipsum dolor sit amet,vehicula vel sapien et, feugiat sapien amet.</p>
+
+        
+      </div>
+      
+      
+    </div>
+    
+  </div>
+  
+</section>
+<!--team Section-->
+<section id="team">
+  <div class="teamsec container-fluid">
+    <div class="row">
+      <h2 class="clienthead">WHAT CLIENTS SAY</h2>
+      <p class="clientpa">We Offer Extensive Medical Procedures To Outbound And Inbound Patients.</p>
+      <hr class="line">
+      
+      <div class="container">
+  
+  <div class="cd col-md-4 col-lg-4">
+  <img src="patil.jpg" alt="John" style="width:100%;height: 250px;">
+  <h1 class="teamname">Akshay Gotmare</h1>
+  <p class="teamtitle">Doctor</p>
+  <p class="teamdes">Hospital</p>
+  <div style="margin: 24px 0;">
+    <a href="#" class="ak"><i class="fa fa-dribbble"></i></a> 
+    <a href="#" class="ak"><i class="fa fa-twitter"></i></a>  
+    <a href="#" class="ak"><i class="fa fa-linkedin"></i></a>  
+    <a href="#" class="ak"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <button class="teambtn">Contact</button>
+</div>
+
+
+<div class="cd col-md-4 col-lg-4">
+  <img src="yogesh.jpg" alt="John" style="width:100%;height: 250px;">
+  <h1 class="teamname">Yogesh Khedekar</h1>
+  <p class="teamtitle">Doctor</p>
+  <p class="teamdes">Hospital</p>
+  <div style="margin: 24px 0;">
+    <a href="#" class="ak"><i class="fa fa-dribbble"></i></a> 
+    <a href="#" class="ak"><i class="fa fa-twitter"></i></a>  
+    <a href="#" class="ak"><i class="fa fa-linkedin"></i></a>  
+    <a href="#" class="ak"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <button class="teambtn">Contact</button>
+</div>
+
+
+<div class="cd col-md-4 col-lg-4">
+  <img src="pankaj.jpg" alt="John" style="width:100%;height: 250px;">
+  <h1 class="teamname">Pankaj Amale</h1>
+  <p class="teamtitle">Doctor</p>
+  <p class="teamdes">Hospital</p>
+  <div style="margin: 24px 0;">
+    <a href="#" class="ak"><i class="fa fa-dribbble"></i></a> 
+    <a href="#" class="ak"><i class="fa fa-twitter"></i></a>  
+    <a href="#" class="ak"><i class="fa fa-linkedin"></i></a>  
+    <a href="#" class="ak"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <button class="teambtn">Contact</button>
+</div>
+
+    </div>  
+   
+
+    </div>
+    
+  </div>
+  
+</section>
+
+
+<!--Latest Section-->
+<section id="latest">
+  <div class="latestsec container-fluid">
+    <div class="row">
+      <div class="container">
+      <div class="box col-lg-3 col-md-3">
+        <h3 class="latesthead">About Us</h3>
+        <p class="latestpara">
+          Our Medical Center is the preferred choice for diplomats and employees from 64 embassies, consulates and UN agencies, as well as private patients from over 60 countries.
+
+        </p>
+      </div>
+
+
+      <div class="box col-lg-3 col-md-3">
+        <h3 class="latesthead">Latest News</h3>
+        <p class="latestaro"><i class="fa fa-chevron-right" aria-hidden="true"></i> Lorem ipsum neque vulputate</p>
+        <p class="latestaro"><i class="fa fa-chevron-right" aria-hidden="true"></i> Lorem ipsum neque vulputate</p>
+        <p class="latestaro"><i class="fa fa-chevron-right" aria-hidden="true"></i> Lorem ipsum neque vulputate</p>
+        <p class="latestaro"><i class="fa fa-chevron-right" aria-hidden="true"></i> Lorem ipsum neque vulputate</p>
+        <p class="latestaro"><i class="fa fa-chevron-right" aria-hidden="true"></i> Lorem ipsum neque vulputate</p>
+      </div>
+
+
+      <div class="box col-lg-3 col-md-3">
+        <h3 class="latesthead">Contact Info</h3>
+        <p class="latestcontact">Akola(Maharashtra),India</p>
+        <p class="latestcontact">info@example.com</p>
+        <p class="latestcontact">8459645718</p>
+      </div>
+      <div class="box col-lg-3 col-md-3">
+        <h3 class="latesthead">Sign up for our Newsletter</h3>
+
+        <form action="#">
+  
+
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="text" placeholder="Email address" name="mail" required>
+    <label>
+      <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+    </label>
+
+
+
+    <input type="submit" value="Subscribe">
+
+        </form>
+
+      </div>
+      
+      </div>
+    </div>
+    
+  </div>
+  <div class="theend container-fluid">
+    <div class="row text-center">
+      <div class="col-12">
+        <h4 style="font-family:Athiti;">&copy; Web Creations.All Rights Reserved.<br> Created by Web Creation<br> 2019</h4>
+       </div>
+   </div>
+</div>
+</section>
+
+
+<!--srollspy-->
+
+<script>
+$(document).ready(function(){
+  // Add scrollspy to <body>
+  $('body').scrollspy({target: ".navbar", offset: 50});   
+
+  // Add smooth scrolling on all links inside the navbar
+  $("#myNavbar a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+<!--Bootstrap-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!--Bootstrap End-->
+
+</body>
+</html>
